@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_lar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@drawable/android_lar">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kelas_navigation" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        app:srcCompat="@drawable/kelas_berapa" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/kelas_sd" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/imageView9"
+        app:srcCompat="@drawable/kelas_smp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/imageView11"
+        app:srcCompat="@drawable/kelas_sma" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView11"
+        android:layout_marginTop="600dp"
+        app:srcCompat="@drawable/kelas_navigation_circle" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView13"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/kelas_button" />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="your_email">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#858597</item>
+    </style>
+
+    <style name="email">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#1F1F39</item>
+    </style>
+
+</resources>

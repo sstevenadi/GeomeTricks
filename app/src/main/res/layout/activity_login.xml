@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android_lar"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@color/blue" >
+
+    <TextView
+        android:id="@+id/log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="-10sp"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="-18dp"
+        android:background="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="305dp"
+        android:layout_height="583dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        app:srcCompat="@drawable/login_illustration" />
+
+
+    <TextView
+        android:id="@+id/your_email"
+        android:layout_width="327dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="-83dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="top"
+        android:text="@string/your_email"
+        android:textAppearance="@style/your_email" />
+
+    <View
+        android:id="@+id/bg1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="521dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg1" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="243dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="535dp"
+        android:gravity="top"
+        android:lineSpacingExtra="-1sp"
+        android:text="@string/email"
+        android:textAppearance="@style/email" />
+
+    <TextView
+        android:id="@+id/your_email"
+        android:layout_width="327dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="59dp"
+        android:gravity="top"
+        android:text="Your Password"
+        android:textAppearance="@style/your_email"
+        tools:ignore="DuplicateIds" />
+
+    <View
+        android:id="@+id/bg1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="611dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/bg1"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="243dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="623dp"
+        android:gravity="top"
+        android:lineSpacingExtra="-1sp"
+        android:text="Password"
+        android:textAppearance="@style/email"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="713dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/logo_navigation" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@drawable/logo_button" />
+
+</RelativeLayout>
