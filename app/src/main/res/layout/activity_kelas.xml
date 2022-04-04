@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView5"
+        android:layout_marginTop="21dp"
         app:srcCompat="@drawable/kelas_berapa" />
 
     <ImageView
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView7"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="67dp"
         app:srcCompat="@drawable/kelas_sd" />
 
     <ImageView
@@ -35,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView7"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="69dp"
         android:layout_toEndOf="@+id/imageView9"
         app:srcCompat="@drawable/kelas_smp" />
 
@@ -45,8 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView7"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="70dp"
         android:layout_toEndOf="@+id/imageView11"
         app:srcCompat="@drawable/kelas_sma" />
 
@@ -55,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView11"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="340dp"
         app:srcCompat="@drawable/kelas_navigation_circle" />
 
     <ImageView

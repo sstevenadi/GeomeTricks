@@ -24,6 +24,7 @@
         android:textColor="@color/white"
         android:textSize="40dp" />
 
+
     <View
         android:id="@+id/bg"
         android:layout_width="match_parent"
@@ -31,19 +32,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="-4dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginBottom="-18dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="-5dp"
         android:background="@drawable/bg" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginLeft="92dp"
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="170dp"
         android:layout_marginRight="92dp"
         app:srcCompat="@drawable/login_illustration" />
-
 
     <TextView
         android:id="@+id/your_email"
@@ -66,9 +66,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="521dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="402dp"
+        android:layout_marginRight="26dp"
         android:background="@drawable/bg1" />
 
     <TextView
@@ -77,8 +77,8 @@
         android:layout_height="20dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="34dp"
-        android:layout_marginTop="535dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="419dp"
         android:gravity="top"
         android:lineSpacingExtra="-1sp"
         android:text="@string/email"
@@ -92,7 +92,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="18dp"
-        android:layout_marginTop="611dp"
+        android:layout_marginTop="468dp"
         android:layout_marginRight="22dp"
         android:background="@drawable/bg1"
         tools:ignore="DuplicateIds" />
@@ -104,7 +104,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="29dp"
-        android:layout_marginTop="623dp"
+        android:layout_marginTop="481dp"
         android:gravity="top"
         android:lineSpacingExtra="-1sp"
         android:text="Password"
@@ -118,10 +118,10 @@
         android:layout_above="@+id/imageView4"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="39dp"
+        android:layout_marginStart="49dp"
         android:layout_marginTop="713dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="20dp"
         app:srcCompat="@drawable/logo_navigation" />
 
     <ImageView
@@ -131,9 +131,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="3dp"
         app:srcCompat="@drawable/logo_button" />
 
 </RelativeLayout>
