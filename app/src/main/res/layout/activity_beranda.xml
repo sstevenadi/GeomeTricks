@@ -83,7 +83,6 @@
         android:background="@drawable/rectangle1"
         android:layout_marginTop="200dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -275,58 +274,71 @@
         </GridLayout>
 
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Tanya dengan koin "
-        android:fontFamily="@font/poppins"
-        android:textColor="@color/black"
-        android:padding="10dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Tanya dengan koin "
+            android:textColor="@color/black" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/rectangle2"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:padding="10dp"
             tools:ignore="ExtraText">
 
-            <TextView
-                android:layout_width="125dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="24 jam setiap hari"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="153dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="16dp"
-                android:text="Bertanya kapan saja "
-                android:textColor="@color/black" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:gravity="left"
-                android:text="isi koin &amp; bertanya sepuasnya"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="24 jam setiap hari"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="Bertanya kapan saja "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="\nisi koin &amp; bertanya sepuasnya"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
 
             <ImageView
-                android:layout_width="34dp"
-                android:layout_height="29dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:gravity="right"
                 android:src="@drawable/org" />
-
-            <ImageView
-                android:layout_width="386dp"
-                android:layout_height="80dp"
-                android:gravity="right"
-                android:src="@drawable/footer" />
         </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:src="@drawable/footer" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
