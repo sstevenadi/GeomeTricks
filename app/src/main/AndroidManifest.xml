@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GeomeTricks">
         <activity
+            android:name=".Akun"
+            android:exported="false" />
+        <activity
+            android:name=".Contoh"
+            android:exported="false" />
+        <activity
+            android:name=".Pembahasan"
+            android:exported="false" />
+        <activity
+            android:name=".Materi"
+            android:exported="false" />
+        <activity
+            android:name=".Subjek"
+            android:exported="false" />
+        <activity
+            android:name=".Beranda"
+            android:exported="false" />
+        <activity
             android:name=".Kelas"
             android:exported="false" />
         <activity

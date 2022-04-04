@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="match_parent"
+    tools:context=".Beranda">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/imgcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/coin" />
+
+            <TextView
+                android:id="@+id/txtcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="1000"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/imgnotif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/notification" />
+
+            <TextView
+                android:id="@+id/txApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgcoin"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="left"
+                android:text="Geometri"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txApp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="left"
+                android:text="Yuk Belajar !"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle1"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:columnCount="3"
+            android:rowCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvMateri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/book"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Materi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTanya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/teacher"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Tanya Tutor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLatihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/test"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Latihan Soal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvrRumus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/rumus"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Rumus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvKalkulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/calculate"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Kalkulator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/game"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:textSize="13sp"
+                        android:text="Game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tanya dengan koin "
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:padding="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle2"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="24 jam setiap hari"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Bertanya kapan saja "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="left"
+                android:text="isi koin &amp; bertanya sepuasnya"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="29dp"
+                android:gravity="right"
+                android:src="@drawable/org" />
+
+            <ImageView
+                android:layout_width="386dp"
+                android:layout_height="80dp"
+                android:gravity="right"
+                android:src="@drawable/footer" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
