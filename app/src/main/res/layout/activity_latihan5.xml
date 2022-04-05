@@ -6,126 +6,168 @@
     android:background="@color/blue"
     android:layout_height="match_parent"
     tools:context=".Latihan5">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle1"
-        android:layout_marginTop="200dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <ImageView
-            android:id="@+id/imgscor"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/kamu"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgseratus"
-            android:layout_width="wrap_content"
+            android:layout_marginVertical="20dp">
+
+            <ImageView
+                android:id="@+id/imgscor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:src="@drawable/kamu"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imgseratus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:src="@drawable/seratus"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/seratus"
-            tools:ignore="MissingConstraints" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Jumlah Soal :"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Benar:"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Salah :"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:layout_marginHorizontal="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jumlah Soal :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Benar:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Salah :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/imgsoal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/soal"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgulang"
-            android:layout_width="120dp"
-            android:layout_height="45dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ulang"
-            tools:ignore="MissingConstraints" />
+            android:src="@drawable/soal" />
 
-        <ImageView
-            android:id="@+id/imgsel"
-            android:layout_width="120dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/selesai"
-            tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgulang"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ulang" />
+
+            <ImageView
+                android:id="@+id/imgsel"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/selesai" />
+
+        </LinearLayout>
+
     </LinearLayout>
-    <TextView
-        android:id="@+id/txApp"
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="left"
-        android:text="Judul Materi"
-        android:textColor="#FFFFFF"
-        android:textSize="24dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="50dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txApp"
-        android:fontFamily="@font/poppins"
-        android:gravity="left"
-        android:text="Latihan Soal"
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-74dp"
-        tools:layout_editor_absoluteY="91dp" />
+        <ImageView
+            android:id="@+id/imgsiku1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/leftsiku" />
 
-    <ImageView
-        android:id="@+id/imgnotif1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/materi1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imgsiku1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/leftsiku"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="6dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Latihan Soal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txApp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="left"
+                    android:text="Yuk Belajar !"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-74dp"
+                    tools:layout_editor_absoluteY="91dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgnotif1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:src="@drawable/rumus1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

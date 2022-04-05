@@ -6,87 +6,106 @@
     android:background="@color/blue"
     android:layout_height="match_parent"
     tools:context=".Latihan4">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rectangle1"
-        android:layout_marginTop="200dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/imgwaktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/waktu" />
+
+            <ImageView
+                android:id="@+id/imgsoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/soal" />
+
+            <ImageView
+                android:id="@+id/imgmulai"
+                android:layout_gravity="center"
+                android:layout_marginTop="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mulai" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imgwaktu"
+            android:id="@+id/imgsiku1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/waktu"
-            tools:ignore="MissingConstraints" />
+            android:src="@drawable/leftsiku" />
 
-        <ImageView
-            android:id="@+id/imgsoal"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/soal"
-            tools:ignore="MissingConstraints" />
+            android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/imgmulai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/mulai"
-            tools:ignore="MissingConstraints" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Latihan Soal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txApp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="left"
+                    android:text="Yuk Belajar !"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-74dp"
+                    tools:layout_editor_absoluteY="91dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgnotif1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:src="@drawable/rumus1" />
+
+        </LinearLayout>
+
     </LinearLayout>
-    <TextView
-        android:id="@+id/txApp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="left"
-        android:text="Judul Materi"
-        android:textColor="#FFFFFF"
-        android:textSize="24dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="50dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txApp"
-        android:fontFamily="@font/poppins"
-        android:gravity="left"
-        android:text="Latihan Soal"
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-74dp"
-        tools:layout_editor_absoluteY="91dp" />
-
-    <ImageView
-        android:id="@+id/imgnotif1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/materi1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <ImageView
-        android:id="@+id/imgsiku1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/leftsiku"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
