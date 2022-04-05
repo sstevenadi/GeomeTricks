@@ -6,6 +6,7 @@
     android:background="@color/blue"
     android:layout_height="match_parent"
     tools:context=".Rumus2">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -19,89 +20,137 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imgbangun"
-            android:layout_width="120dp"
-            android:layout_height="45dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/ruang_putih"
-            tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <ImageView
-            android:id="@+id/imgruang"
-            android:layout_width="120dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/bangun_biru"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgpersegi"
-            android:layout_width="50dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/kotak1"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgsegitiga"
-            android:layout_width="50dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/segitiga2"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imglingkaran"
-            android:layout_width="50dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/lingkaran3"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgsegi5"
-            android:layout_width="50dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/segi5"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgbangun1"
-            android:layout_width="380dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/bangun1"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgbangun2"
-            android:layout_width="380dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/bangun2"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgbangun3"
-            android:layout_width="380dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/bangun3"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgbangun4"
-            android:layout_width="380dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/bangun4"
-            tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/imgbangun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/bangun"/>
+
+            <ImageView
+                android:id="@+id/imgruang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ruang_putih" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgpersegi"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/kotak1" />
+
+                <ImageView
+                    android:id="@+id/imgbangun1"
+                    android:layout_width="380dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/bangun1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsegitiga"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/segitiga2" />
+
+                <ImageView
+                    android:id="@+id/imgbangun2"
+                    android:layout_width="380dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/bangun2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imglingkaran"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/lingkaran3" />
+
+                <ImageView
+                    android:id="@+id/imgbangun3"
+                    android:layout_width="380dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/bangun3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgsegi5"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/segi5" />
+
+                <ImageView
+                    android:id="@+id/imgbangun4"
+                    android:layout_width="380dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/bangun4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
+
     <TextView
         android:id="@+id/txApp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="left"
         android:text="Rumus"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -109,10 +158,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:src="@drawable/rumus1"
+        android:src="@drawable/orgkalku"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="30dp" />
 
     <ImageView
         android:id="@+id/imgsiku1"
@@ -123,4 +172,5 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="6dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

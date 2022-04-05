@@ -6,6 +6,7 @@
     android:background="@color/blue"
     android:layout_height="match_parent"
     tools:context=".Rumus3">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -18,64 +19,72 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/imgsoal4"
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_height="100dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/soal4"
-            tools:ignore="MissingConstraints" />
-        <TextView
-            android:id="@+id/rumus"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/soal4" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="left"
-            android:text="Rumus"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="50dp"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgrum"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/rumpersegi"
-            tools:ignore="MissingConstraints" />
-        <TextView
-            android:id="@+id/contoh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="left"
-            android:text="Contoh"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="50dp"
-            tools:ignore="MissingConstraints" />
-        <ImageView
-            android:id="@+id/imgcon"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/con4"
-            tools:ignore="MissingConstraints" />
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rumus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Rumus"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgrum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/rumpersegi" />
+
+            <TextView
+                android:id="@+id/contoh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="10dp"
+                android:text="Contoh"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imgcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/con4" />
+
+        </LinearLayout>
+
     </LinearLayout>
+
     <TextView
         android:id="@+id/txApp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="left"
-        android:text="Bangun 1"
+        android:text="Rumus"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -83,10 +92,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:src="@drawable/rumus1"
+        android:src="@drawable/orgkalku"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="30dp" />
 
     <ImageView
         android:id="@+id/imgsiku1"
