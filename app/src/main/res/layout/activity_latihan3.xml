@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/blue"
     android:layout_height="match_parent"
-    tools:context=".Pembahasan">
-
+    tools:context=".Latihan3">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -20,78 +19,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imgtim"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
-
-            <ImageView
-                android:id="@+id/imgon"
-                android:layout_width="120dp"
-                android:layout_height="45dp"
-                android:layout_marginEnd="10dp"
-                android:src="@drawable/on" />
-
-            <ImageView
-                android:id="@+id/imgoff"
-                android:layout_width="120dp"
-                android:layout_height="45dp"
-                android:layout_marginStart="10dp"
-                android:src="@drawable/off" />
-
-        </LinearLayout>
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ket"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
-            android:layout_marginTop="20dp"
-            android:id="@+id/img"
-            android:layout_width="220dp"
-            android:layout_height="200dp"
-            android:src="@drawable/pem"
-            android:layout_gravity="center"/>
-
+            android:id="@+id/imgtim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mulai"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
-
     <TextView
         android:id="@+id/txApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="left"
-        android:text="Geometri"
+        android:text="Judul Materi"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="43dp" />
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txApp"
-        android:layout_marginStart="16dp"
         android:fontFamily="@font/poppins"
         android:gravity="left"
-        android:text="Yuk Belajar !"
+        android:text="Latihan Soal"
         android:textColor="#FFFFFF"
         android:textSize="14dp"
-        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="81dp" />
+        tools:layout_editor_absoluteX="-74dp"
+        tools:layout_editor_absoluteY="91dp" />
 
     <ImageView
         android:id="@+id/imgnotif1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:src="@drawable/materi1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imgsiku1"
@@ -102,5 +80,7 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="6dp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

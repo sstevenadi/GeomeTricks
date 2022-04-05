@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/blue"
     android:layout_height="match_parent"
-    tools:context=".Materi">
-
+    tools:context=".Latihan5">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -21,82 +20,107 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imgcel"
-            android:layout_width="398dp"
+            android:id="@+id/imgscor"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_alignParentRight="true"
-            android:src="@drawable/cel1"
+            android:src="@drawable/kamu"
             tools:ignore="MissingConstraints" />
         <ImageView
-            android:id="@+id/imgcel2"
-            android:layout_width="398dp"
+            android:id="@+id/imgseratus"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_alignParentRight="true"
-            android:src="@drawable/cel2"
+            android:src="@drawable/seratus"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Jumlah Soal :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Benar:"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Salah :"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imgsoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/soal"
             tools:ignore="MissingConstraints" />
         <ImageView
-            android:id="@+id/imgcel3"
-            android:layout_width="398dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/cel3"
+            android:id="@+id/imgulang"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ulang"
             tools:ignore="MissingConstraints" />
 
         <ImageView
-            android:id="@+id/imgcel4"
-            android:layout_width="398dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/cel4"
+            android:id="@+id/imgsel"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/selesai"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
-
     <TextView
         android:id="@+id/txApp"
-        android:layout_width="401dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="left"
-        android:text="Geometri"
+        android:text="Judul Materi"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="50dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txApp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="84dp"
         android:fontFamily="@font/poppins"
         android:gravity="left"
-        android:text="Yuk Belajar !"
+        android:text="Latihan Soal"
         android:textColor="#FFFFFF"
         android:textSize="14dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-74dp"
+        tools:layout_editor_absoluteY="91dp" />
 
     <ImageView
         android:id="@+id/imgnotif1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="16dp"
         android:src="@drawable/materi1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
-        android:id="@+id/imgsiku2"
+        android:id="@+id/imgsiku1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -104,5 +128,4 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="6dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="1dp"
                 android:src="@drawable/coin" />
 
             <TextView
@@ -289,10 +289,10 @@
         </GridLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
             android:gravity="center"
             android:text="Tanya dengan koin "
             android:textColor="@color/black" />

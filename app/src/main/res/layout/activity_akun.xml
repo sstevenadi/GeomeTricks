@@ -27,8 +27,8 @@
         android:textColor="@color/black"
         android:textSize="24dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="38dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="35dp" />
 
     <ImageView
         android:id="@+id/imgcel"

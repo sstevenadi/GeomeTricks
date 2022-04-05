@@ -11,45 +11,90 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rectangle1"
         android:layout_marginTop="200dp"
+        android:background="@drawable/rectangle1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="10dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imgon"
-                android:layout_width="120dp"
-                android:layout_height="45dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/on" />
+                android:src="@drawable/ajukanpertanyaan_bttn" />
 
             <ImageView
                 android:id="@+id/imgoff"
-                android:layout_width="120dp"
-                android:layout_height="45dp"
+                android:layout_width="161dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/off" />
+                android:src="@drawable/caritutor_bttn" />
+
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Upload Foto Soal"
+            android:textColor="@color/black" />
+
         <ImageView
+            android:id="@+id/imgupload"
+            android:layout_width="320dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:src="@drawable/upload_tanya"/>
+
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Status Soalku"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgstatus"
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/status_soal" />
+
+        <TextView
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Review"
+            android:textColor="@color/black" />
+
+        <ImageView
             android:id="@+id/img"
-            android:layout_width="220dp"
-            android:layout_height="200dp"
-            android:src="@drawable/pem"
-            android:layout_gravity="center"/>
+            android:layout_width="320dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/nama_tutor" />
 
     </LinearLayout>
 
@@ -60,7 +105,7 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="left"
-        android:text="Geometri"
+        android:text="Tanya Tutor"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,24 +119,12 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/poppins"
         android:gravity="left"
-        android:text="Yuk Belajar !"
+        android:text="Teruslah Bertanya Hingga Paham!"
         android:textColor="#FFFFFF"
         android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="81dp" />
-
-    <ImageView
-        android:id="@+id/imgnotif1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/materi1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imgsiku1"

@@ -48,26 +48,28 @@
         android:id="@+id/txApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:gravity="left"
         android:text="Geometri"
         android:textColor="#FFFFFF"
         android:textSize="24dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="50dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="53dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txApp"
+        android:layout_marginStart="16dp"
         android:fontFamily="@font/poppins"
         android:gravity="left"
         android:text="Yuk Belajar !"
         android:textColor="#FFFFFF"
         android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-74dp"
         tools:layout_editor_absoluteY="91dp" />
 
     <ImageView
