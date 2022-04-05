@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GeomeTricks">
         <activity
+            android:name=".Kalkulator3"
+            android:exported="false" />
+        <activity
+            android:name=".Kalkulator2"
+            android:exported="false" />
+        <activity
+            android:name=".kalkulator"
+            android:exported="false" />
+        <activity
+            android:name=".Rumus3"
+            android:exported="false" />
+        <activity
+            android:name=".Rumus2"
+            android:exported="false" />
+        <activity
+            android:name=".Rumus"
+            android:exported="false" />
+        <activity
             android:name=".Akun"
             android:exported="false" />
         <activity
