@@ -149,6 +149,7 @@
                     android:padding="16sp">
 
                     <ImageView
+                        android:id="@+id/teach"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/teacher" />
@@ -243,6 +244,7 @@
                     android:padding="16sp">
 
                     <ImageView
+                        android:id="@+id/calcul"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/calculate" />

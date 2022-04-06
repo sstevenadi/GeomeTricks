@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/kelas_navigation" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"
@@ -33,7 +33,7 @@
         android:textSize="16dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/game_bttn_mulai" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="660dp"

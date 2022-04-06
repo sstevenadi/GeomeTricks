@@ -93,9 +93,10 @@
     <ImageView
         android:layout_width="230dp"
         android:layout_height="163dp"
-        android:src="@drawable/game_Illustration"
+        android:src="@drawable/game1"
         tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="-10dp" />
+        tools:layout_editor_absoluteY="-10dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
